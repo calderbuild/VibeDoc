@@ -1,122 +1,85 @@
-# 🚀 VibeDoc: Your AI Product Manager & Architect
+# VibeDoc: AI Product Manager and Architect
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Gradio](https://img.shields.io/badge/Gradio-5.34.1-orange)](https://gradio.app/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![GitHub stars](https://img.shields.io/github/stars/calderbuild/VibeDoc?style=social)](https://github.com/calderbuild/VibeDoc)
 
 <div align="center">
 
-**Transform Ideas into Complete Development Plans in 60-180 Seconds**
+**Turn a one-line product idea into a complete development plan in 1 to 3 minutes**
 
-AI-powered Product Manager & Software Architect that generates technical documentation, architecture diagrams, and AI coding prompts
+Best Topic Award, OpenManus Hackathon
 
-[🌐 Online Demo](https://modelscope.cn/studios/JasonRobert/Vibedocs) | [🎬 Demo Video](https://www.bilibili.com/video/BV1ieagzQEAC/) | [🤝 Contributing](./CONTRIBUTING.md) | [💬 Discussions](https://github.com/JasonRobertDestiny/VibeDoc/discussions) | [中文文档](./README.zh.md)
+[Online Demo](https://modelscope.cn/studios/JasonRobert/Vibedocs) | [Demo Video](https://www.bilibili.com/video/BV1ieagzQEAC/) | [Issues](https://github.com/calderbuild/VibeDoc/issues) | [中文文档](./README.zh.md)
 
 </div>
 
 ---
 
-## ✨ Why VibeDoc?
+## What it is
 
-As a developer, product manager, or entrepreneur, you face these challenges:
+VibeDoc takes a rough product idea and writes the plan you would otherwise spend days on: a product overview, a technical architecture with Mermaid diagrams, a phased development plan, and ready-to-use prompts for AI coding tools. You can export the result as Markdown, Word, PDF, or HTML.
 
-- 💭 **Great Ideas, No Plan?** You have ideas but don't know how to turn them into actionable development plans
-- ⏰ **Documentation Takes Forever?** Writing technical specs and architecture docs consumes massive time
-- 🤖 **AI Tools Confusing?** You want AI-assisted coding but struggle with effective prompt engineering
-- 📊 **Missing Professional Diagrams?** You need architecture, flow, and Gantt charts but lack design tools expertise
+It is built for the gap between "I have an idea" and "I can start coding":
 
-**VibeDoc Solves Everything!**
+- You have an idea but no actionable plan.
+- Writing specs and architecture docs takes too long.
+- You want AI coding tools to help, but writing good prompts is hard.
+- You need architecture, flow, and Gantt charts without a diagramming tool.
 
 ![VibeDoc Interface](./image/vibedoc.png)
 
-## 🎯 Core Features
+## Features
 
-### 📋 Intelligent Development Plan Generation
+### Development plan generation
 
-Enter your product idea - AI generates a complete plan in 60-180 seconds:
+Enter a product idea and VibeDoc generates:
 
-- **Product Overview** - Background, target users, core value proposition
-- **Technical Solution** - Tech stack selection, architecture design, technology comparison
-- **Development Plan** - Phased implementation, timeline, resource allocation
-- **Deployment Strategy** - Environment setup, CI/CD pipeline, operations monitoring
-- **Growth Strategy** - Market positioning, operations advice, growth tactics
+- **Product overview**: background, target users, core value
+- **Technical solution**: stack selection, architecture design, technology comparison
+- **Development plan**: phases, timeline, resource allocation
+- **Deployment strategy**: environment setup, CI/CD, monitoring
+- **Growth strategy**: positioning, operations, growth tactics
 
-### 🤖 AI Coding Prompt Generation
+### AI coding prompts
 
-Generate ready-to-use prompts for each feature module, supporting:
-
-- ✅ **Claude** - Code generation, architecture design
-- ✅ **GitHub Copilot** - Intelligent code completion
-- ✅ **ChatGPT** - Technical consultation, code optimization
-- ✅ **Cursor** - AI-assisted programming
+Ready-to-use prompts for each feature module, written for Claude, GitHub Copilot, ChatGPT, and Cursor.
 
 ![AI Coding Prompts](./image/1.png)
 
-### 📊 Auto-Generated Visual Diagrams
+### Diagrams
 
-Professional diagrams using Mermaid:
+Mermaid-rendered system architecture diagrams, business flowcharts, Gantt charts, and technology comparison tables.
 
-- 🏗️ **System Architecture** - Component relationships visualization
-- 📈 **Business Flowcharts** - Business logic visualization
-- 📅 **Gantt Charts** - Project timeline at a glance
-- 📊 **Tech Comparison Tables** - Technology decision reference
+### Export
 
-### 📁 Multi-Format Export
-
-One-click export for different scenarios:
-
-- **Markdown** (.md) - Version control friendly, GitHub display
-- **Word** (.docx) - Business documents, project reports
-- **PDF** (.pdf) - Formal proposals, print archives
-- **HTML** (.html) - Web display, online sharing
+| Format | Good for |
+|--------|----------|
+| Markdown (.md) | Version control, GitHub |
+| Word (.docx) | Business documents, reports |
+| PDF (.pdf) | Formal proposals, archiving |
+| HTML (.html) | Web display, sharing |
 
 ![Generated Example](./image/2.png)
 
-## 💡 Real-World Example
+## Example
 
-### Input Idea
+Input:
+
 ```
 Develop an AR sign language translation app that can translate sign language
 into voice and text in real-time, and also translate voice and text into
 sign language gestures displayed in AR
 ```
 
-### Generated Output
+Output: [the complete development plan](./HandVoice_Development_Plan.md). It covers:
 
-**📄 [View Complete Development Plan](./HandVoice_Development_Plan.md)** (10,000+ words)
-
-The AI-generated plan includes:
-
-#### 1. **Product Overview**
-- Target users (deaf community, healthcare workers, educators)
-- Core features (real-time translation, multi-language support, AR visualization)
-- Market positioning and competitive analysis
-
-#### 2. **Technical Architecture**
-Complete system architecture with Mermaid diagrams showing:
-- User interface components
-- Backend services
-- ML model integration
-- Database design
-- AR rendering pipeline
-
-#### 3. **Technology Stack**
-- **Frontend**: React Native (cross-platform)
-- **Backend**: Node.js + Express
-- **ML Models**: TensorFlow for sign language recognition
-- **NLP**: spaCy for natural language processing
-- **AR**: ARKit (iOS) / ARCore (Android)
-- **Database**: MongoDB
-
-#### 4. **Development Timeline**
-6-month plan with 3 major milestones:
-- **Month 1-2**: Core recognition & translation engine
-- **Month 3-4**: AR integration & UI development
-- **Month 5-6**: Testing, optimization & deployment
-
-#### 5. **12+ AI Coding Prompts**
-Ready-to-use prompts for each module. Example:
+1. **Product overview**: target users (deaf community, healthcare workers, educators), core features, positioning
+2. **Technical architecture**: Mermaid diagrams for UI, backend services, ML model integration, database, AR rendering
+3. **Technology stack**: React Native, Node.js + Express, TensorFlow, spaCy, ARKit / ARCore, MongoDB
+4. **Timeline**: a 6-month plan with 3 milestones
+5. **AI coding prompts**: one per module, for example:
 
 ```
 Feature: Hand Gesture Recognition Model
@@ -148,90 +111,61 @@ Expected Output:
 - Mobile optimization strategies
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
-### 🌐 Online Demo (Recommended)
+### Online demo
 
-**👉 [Try VibeDoc Now](https://modelscope.cn/studios/JasonRobert/Vibedocs)** - No installation required!
+[Try VibeDoc on ModelScope](https://modelscope.cn/studios/JasonRobert/Vibedocs), no installation needed:
 
-Experience the full functionality:
-1. Enter your product idea (e.g., "Build a smart fitness app")
-2. Optionally add reference URLs for context
-3. Click generate and wait 60-180 seconds
-4. Get complete development plan with AI coding prompts
-5. Export to Markdown/Word/PDF/HTML formats
+1. Enter your product idea (for example, "Build a smart fitness app").
+2. Optionally add reference URLs for context.
+3. Click generate and wait 1 to 3 minutes.
+4. Review the plan and the AI coding prompts.
+5. Export to Markdown, Word, PDF, or HTML.
 
-### 💻 Local Installation
+### Local installation
 
-#### Prerequisites
-
-- Python 3.11+
-- pip package manager
-- [SiliconFlow API Key](https://siliconflow.cn) (free to obtain)
-
-#### Installation Steps
+Prerequisites: Python 3.11+ and a [SiliconFlow API key](https://siliconflow.cn) (free to register).
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/JasonRobertDestiny/VibeDoc.git
+git clone https://github.com/calderbuild/VibeDoc.git
 cd VibeDoc
 
-# 2. Create virtual environment (recommended)
 python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
 
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-# 3. Install dependencies
 pip install -r requirements.txt
-
-# 4. Configure environment variables
-cp .env.example .env
-# Edit .env file and add your API Key
+cp .env.example .env          # then add your API key
 ```
 
-### Configuration
-
-In `.env` file:
+`.env`:
 
 ```env
-# Required: SiliconFlow API Key (free registration)
+# Required
 SILICONFLOW_API_KEY=your_api_key_here
 
-# Optional: Advanced Configuration
+# Optional
 API_TIMEOUT=300
 LOG_LEVEL=INFO
 ENVIRONMENT=production
 ```
 
-### Run Application
+Run:
 
 ```bash
 python app.py
 ```
 
-Application starts at:
-- Local: http://localhost:7860
-- Network: http://0.0.0.0:7860
+The app starts at http://localhost:7860.
 
-### 🐳 Docker Deployment (Optional)
+### Docker
 
 ```bash
-# Build image
 docker build -t vibedoc .
-
-# Run container
-docker run -p 7860:7860 \
-  -e SILICONFLOW_API_KEY=your_key \
-  vibedoc
+docker run -p 7860:7860 -e SILICONFLOW_API_KEY=your_key vibedoc
 ```
 
-## 🏗️ Technical Architecture
-
-Modular architecture design:
+## Architecture
 
 ```
 ┌─────────────────────────────────────────┐
@@ -249,137 +183,76 @@ Modular architecture design:
 └──┬────────┬──────────┬─────────┬────────┘
    │        │          │         │
    ▼        ▼          ▼         ▼
-┌──────┐ ┌────────┐ ┌──────┐ ┌──────────┐
-│ AI   │ │Prompt  │ │Content│ │Export    │
-│Model │ │Optimizer│ │Validator│ │Manager   │
-└──────┘ └────────┘ └──────┘ └──────────┘
+┌──────┐ ┌─────────┐ ┌─────────┐ ┌────────┐
+│ AI   │ │ Prompt  │ │ Content │ │ Export │
+│Model │ │Optimizer│ │Validator│ │Manager │
+└──────┘ └─────────┘ └─────────┘ └────────┘
 ```
 
-### Technology Stack
+Tech stack:
 
-- **Frontend**: Gradio 5.34.1 - Fast AI app interface
-- **AI Model**: Qwen2.5-72B-Instruct - Alibaba Cloud
-- **Chart Rendering**: Mermaid.js - Code-based diagrams
-- **Document Export**: python-docx, reportlab
-- **Async Processing**: asyncio, aiofiles
+- **UI**: Gradio 5.34.1
+- **Model**: Qwen2.5-72B-Instruct via the SiliconFlow API
+- **Diagrams**: Mermaid.js
+- **Export**: python-docx, reportlab
+- **Async**: asyncio, aiofiles
 
-## 📊 Performance Metrics
+## Who it is for
 
-| Metric | Performance |
-|--------|-------------|
-| **Generation Speed** | 60-180 seconds |
-| **Success Rate** | >95% |
-| **Content Quality** | 85/100 average |
-| **Export Formats** | 4 formats |
+- **Developers**: check technical feasibility, generate project docs, get AI coding prompts.
+- **Product managers**: turn requirements into a technical plan, estimate timelines, draft proposals.
+- **Founders**: validate an idea, plan an MVP, prepare a technical plan for investors.
+- **Students**: learn architecture design, prepare for interviews, plan a graduation project.
 
-## 🎨 Use Cases
+## Contributing
 
-### 👨‍💻 Developers
-- ✅ Validate technical feasibility quickly
-- ✅ Generate project documentation
-- ✅ Get AI coding prompts
-- ✅ Learn architecture best practices
+Bug reports, feature ideas, documentation fixes, and code are all welcome.
 
-### 📊 Product Managers
-- ✅ Transform requirements into technical solutions
-- ✅ Create project planning documents
-- ✅ Estimate development cycles
-- ✅ Build project proposals
+1. Fork the repository.
+2. Create a branch (`git checkout -b feature/your-feature`).
+3. Commit your changes.
+4. Push the branch and open a pull request.
 
-### 🎓 Students & Learners
-- ✅ Learn software development best practices
-- ✅ Understand architecture design
-- ✅ Prepare for technical interviews
-- ✅ Plan graduation projects
-
-### 🚀 Entrepreneurs
-- ✅ Validate product ideas quickly
-- ✅ Generate technical plans for investors
-- ✅ Plan MVP development
-- ✅ Assess implementation costs
-
-## 🤝 Contributing
-
-We welcome all contributions:
-
-- 🐛 Report Bugs
-- 💡 Suggest Features
-- 📝 Improve Documentation
-- 🔧 Submit Code
-
-### Steps
-
-1. Fork this project
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Submit Pull Request
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
-
-## 💬 Join Community
-
-Join the VibeDoc community to share experiences, get support, and discuss ideas!
+## Community
 
 <div align="center">
 <img src="./image/discussion_group.jpg" width="300" alt="VibeDoc Community QR Code">
 
-**Scan to Join VibeDoc Community**
-
-Share Experiences | Get Support | Join Discussions
+Scan to join the VibeDoc community group.
 </div>
 
-## 📝 Documentation
+## Documentation
 
-- [User Guide](./USER_GUIDE.md) - Detailed instructions
-- [Technical Docs](./CLAUDE.md) - Architecture & development
-- [Deployment Guide](./DEPLOYMENT.md) - Production deployment
-- [Security Policy](./SECURITY.md) - Security best practices
+- [Deployment Guide](./DEPLOYMENT.md)
+- [Security Policy](./SECURITY.md)
+- [Contributor and agent guidelines](./AGENTS.md)
 
-## 🎯 Roadmap
+## Roadmap
 
-### v2.1 (Planned)
-- [ ] More AI models (GPT-4, Claude, etc.)
-- [ ] Team collaboration features
-- [ ] Version management
+- [ ] More models (GPT-4, Claude, etc.)
+- [ ] Team collaboration
+- [ ] Plan version management
 - [ ] Online editor
-
-### v2.2 (Planned)
 - [ ] Mobile support
-- [ ] Multi-language (English, Japanese)
 - [ ] Template marketplace
-- [ ] API interface
+- [ ] API
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- **Qwen2.5-72B-Instruct** by Alibaba Cloud
-- **Gradio** team
-- **SiliconFlow** API services
-- All contributors and users ❤️
+- Qwen2.5-72B-Instruct by Alibaba Cloud
+- Gradio
+- SiliconFlow
 
-## 📄 License
+## License
 
 [MIT License](LICENSE)
 
-## 📞 Contact
+## Contact
 
-- **Issues**: [GitHub Issues](https://github.com/JasonRobertDestiny/VibeDoc/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/JasonRobertDestiny/VibeDoc/discussions)
+- **Issues**: [GitHub Issues](https://github.com/calderbuild/VibeDoc/issues)
 - **Email**: johnrobertdestiny@gmail.com
-- **Demo**: [Bilibili](https://www.bilibili.com/video/BV1ieagzQEAC/)
+- **Demo video**: [Bilibili](https://www.bilibili.com/video/BV1ieagzQEAC/)
 
-## ⭐ Star History
+## Star History
 
-If this project helps you, give us a Star ⭐!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=JasonRobertDestiny/VibeDoc&type=Date)](https://star-history.com/#JasonRobertDestiny/VibeDoc&Date)
-
----
-
-<div align="center">
-
-**🚀 Empower Every Idea with AI**
-
-Made with ❤️ by the VibeDoc Team
-
-</div>
+[![Star History Chart](https://api.star-history.com/svg?repos=calderbuild/VibeDoc&type=Date)](https://star-history.com/#calderbuild/VibeDoc&Date)
